@@ -13,7 +13,6 @@ class ClassName(str, Enum):
 
 app = FastAPI()
 
-
 @app.get("/classes/{class_name}")
 async def get_class(class_name: ClassName):
     if class_name == '':
